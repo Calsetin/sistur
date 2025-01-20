@@ -1,0 +1,139 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background: url('http://localhost/sistur/fondo/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff; /* Color del texto en blanco */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el contenedor del título y el logo */
+.logo-con-titulo {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo para el logotipo personalizado */
+.imagen-personalizada {
+    width: 350px; /* Ancho del logo */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    margin: 5px; /* Margen uniforme alrededor del logo */
+    border-radius: 15%; /* Borde redondeado para un aspecto más suave (opcional) */
+    transition: transform 0.3s ease; /* Transición de transformación para efectos suaves */
+}
+
+.imagen-personalizada:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para el título principal */
+.logo-con-titulo h1 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+/* Estilo para el formulario */
+form {
+    width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    text-align: center; /* Centro del contenido horizontalmente */
+}
+
+/* Estilo para etiquetas en el formulario */
+form label {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Estilo para campos de entrada en el formulario */
+.form-input {
+    display: inline-block;
+    text-align: center; /* Centra el contenido de los campos de entrada */
+    margin-top: 10px;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 40px;
+    width: 30%;
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    border: 1px solid #ccc; /* Borde de los campos */
+}
+
+/* Estilo para el cuadro de texto */
+textarea.form-input {
+    height: max-content; /* Ajusta la altura automáticamente */
+    width: 100%;
+}
+
+/* Estilo para los botones */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #297fb9; /* Cambio de color al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #f44336; /* Color de fondo del botón "Volver" */
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #c62828; /* Cambio de color al pasar el mouse para el botón "Volver" */
+}
+
+/* Estilo para el mensaje de éxito/error */
+.alert {
+    position: fixed; /* Posición fija para mantener el mensaje en pantalla */
+    text-align: center;
+    top: 50%; /* Centrar verticalmente en la mitad superior */
+    left: 50%; /* Centrar horizontalmente en la mitad izquierda */
+    transform: translate(-50%, -50%); /* Centrar completamente en el centro */
+    z-index: 1000; /* Capa sobre el contenido */
+    width: 80%; /* Ancho del mensaje */
+    max-width: 300px; /* Máximo ancho del mensaje */
+    opacity: 0; /* Inicialmente oculto */
+    visibility: hidden; /* Inicialmente oculto */
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s; /* Transición de opacidad */
+}
+
+.alert.show {
+    opacity: 1; /* Mostrar el mensaje */
+    visibility: visible; /* Mostrar el mensaje */
+    transition-delay: 0s; /* No retraso en la visibilidad al mostrar */
+}
+
+/* Animación para desvanecer el mensaje después de mostrarlo */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.alert.fade-out {
+    animation: fadeOut 3s forwards; /* Animación de desvanecimiento */
+}
+

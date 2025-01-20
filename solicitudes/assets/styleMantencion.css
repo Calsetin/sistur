@@ -1,0 +1,116 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background-image: url('http://localhost/sistur/fondo/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "poppins", sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para el menú personalizado */
+.menu-personalizado {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-personalizado a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu-personalizado a:hover {
+    background-color: #297fb9c0;
+    transform: scale(1.05);
+}
+
+.menu-personalizado a:first-child {
+    margin-right: 0;
+}
+
+.menu-personalizado a:last-child {
+    margin-right: auto;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Estilo para el logotipo */
+.container img {
+    width: 250px; /* Ancho del logo */
+    height: auto; /* Altura ajustada automáticamente para mantener la proporción */
+    margin: 5px; /* Margen uniforme alrededor del logo */
+    transition: transform 0.3s ease; /* Transición de transformación para efectos suaves */
+}
+
+.container img:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el ratón para un toque interactivo (opcional) */
+}
+
+/* Estilo para el título principal */
+.container h1 {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+/* Estilo para los botones */
+.container button {
+    width: 400px;
+    background-color: #297fb9c0;
+    border: none;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #297fb9c0;
+    transform: scale(1.05);
+}
+
+/* Estilo para el enlace de cerrar sesión */
+.volver {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #297fb9c0;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.volver:hover {
+    background-color: #297fb9c0;
+    transform: scale(1.05);
+}
