@@ -69,7 +69,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="apellido">APELLIDO:</label>
             <input type="text" id="apellido" name="apellido">
         </div>
-        <input type="submit" value="Buscar" class="button">
+        <input type="submit" value="Buscar Turno" class="button">
     </form>
 
     <nav class="menu-personalizado">

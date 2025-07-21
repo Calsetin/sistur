@@ -23,7 +23,7 @@
                 <label for="nombre">Apellido:</label>
                 <input type="text" name="apellido" class="form-control" placeholder="" required>
             </div>
-            <button type="submit" name="buscar" class="btn btn-primary mb-2">Buscar</button>
+            <button type="submit" name="buscar" class="btn btn-primary mb-2">Buscar Solicitudes</button>
             <a href="http://localhost/sistur/solicitudes/solicitudes.php" class="btn btn-secondary mb-2 ml-2">Volver</a>
         </form>
         

@@ -64,7 +64,7 @@
 
                 echo '</tbody>';
                 echo '</table>';
-                echo '<td><button type="submit" class="btn btn-success" name="editar">Editar/Guardar</button></td>';
+                echo '<td><button type="submit" class="btn btn-success" name="editar">Guardar Cambios</button></td>';
                 echo '</div>';
                 echo '</form>';
             } else {
